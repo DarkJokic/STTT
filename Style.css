@@ -28,8 +28,8 @@ html, body {
 
 .GameContainer{
     display: flex;
-    width: 70vh;
-    height: 100vw;
+    width: 51vh;
+    height: 70vh;
     background-color: rgb(255, 255, 255);
     background-image: url(TicToe.png);
     background-size: cover;
