@@ -129,7 +129,7 @@ export function PlayerMove(Element, MatrixBase, PlayedQuadrant, PlayedCell, Boar
 
         if(Quadrant === undefined){return}
 
-        ToPlayIn = ToPlayIn = document.getElementById(String(Quadrant))
+        ToPlayIn = document.getElementById(String(Quadrant))
         ToPlayIn.classList.add("WhereToPlay")
     }
 }
