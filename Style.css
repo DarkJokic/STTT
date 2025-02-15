@@ -28,10 +28,10 @@ html, body {
 
 .GameContainer{
     display: flex;
-    width: 51vh;
-    height: 70vh;
+    width: 30%;
     background-color: rgb(255, 255, 255);
     background-image: url(TicToe.png);
+    aspect-ratio: 1/1;
     background-size: cover;
     justify-content: center;
     justify-items: center;
