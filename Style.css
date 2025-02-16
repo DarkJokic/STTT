@@ -28,7 +28,7 @@ html, body {
 
 .GameContainer{
     display: flex;
-    width: 40%;
+    width: 35%;
     background-color: rgb(255, 255, 255);
     background-image: url(TicToe.png);
     aspect-ratio: 1/1;
