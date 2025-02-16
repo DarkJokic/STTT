@@ -72,6 +72,8 @@ function freeSpot(MatrixBase){
      for(let i=1; i<MatrixBase.Size + 1; i++){
          if(MatrixBase.GetCellInfo(i) === undefined){return true}
      }
+
+     return false;
 }
 
 export function PlayerMove(Element, MatrixBase, PlayedQuadrant, PlayedCell, Board){
