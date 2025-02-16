@@ -68,6 +68,12 @@ function CheckGameOver(Player, MatrixBase){
 
 }
 
+function freeSpot(MatrixBase){
+     for(let i=1; i<MatrixBase.Size + 1; i++){
+         if(MatrixBase.GetCellInfo(i) === undefined){return true}
+     }
+}
+
 export function PlayerMove(Element, MatrixBase, PlayedQuadrant, PlayedCell, Board){
 
     if(gameEnded){return}
@@ -114,7 +120,7 @@ export function PlayerMove(Element, MatrixBase, PlayedQuadrant, PlayedCell, Boar
         Quadrant = undefined;
 
     }else{
-        if(typeof(Board.GetCellInfo(PlayedCell)) === "string"){Quadrant = undefined}else{Quadrant = PlayedCell}
+        if(typeof(Board.GetCellInfo(PlayedCell)) === "string"  || !(freeSpot(Board.GetCellInfo(PlayedCell)))){Quadrant = undefined}else{Quadrant = PlayedCell}
     }
     
     if(CurrentPlayer === "X"){CurrentPlayer = "O"}else{CurrentPlayer = "X"}
